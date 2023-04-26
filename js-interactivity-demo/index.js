@@ -30,9 +30,12 @@ const themeButtonClickHandler = (event) => {
     let main = document.querySelector('main')
     let allButtons = document.querySelectorAll('button')
 
+    body.classList = ""
     body.classList.add(theme)
+    main.classList = ""
     main.classList.add(theme)
     for (let i = 0; i < buttonList.length; i++) {
+        allButtons[i].classList = ""
         allButtons[i].classList.add(theme)
     }
 }
